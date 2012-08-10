@@ -1,14 +1,14 @@
 package com.topsoft.tmp.domain.exception;
 
 /**
- * Î´¶¨ÒåµÄÈÎÎñ×´Ì¬Òì³£
+ * æœªå®šä¹‰çš„ä»»åŠ¡çŠ¶æ€å¼‚å¸¸
  * 
  * @author weichao
  *
  */
 public class UndefinedTaskStateException extends RuntimeException {
 	
-	static final String UNDEFINEDTASKSTATE = "Î´¶¨ÒåµÄÈÎÎñ×´Ì¬"; 
+	static final String UNDEFINEDTASKSTATE = "æœªå®šä¹‰çš„ä»»åŠ¡çŠ¶æ€"; 
 	
 	/**
 	 * serialVersionUID
