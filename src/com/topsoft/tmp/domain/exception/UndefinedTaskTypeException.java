@@ -1,14 +1,14 @@
 package com.topsoft.tmp.domain.exception;
 
 /**
- * 未定义的任务类型异常
+ * 鏈畾涔夌殑浠诲姟绫诲瀷寮傚父
  * 
  * @author weichao
  *
  */
 public class UndefinedTaskTypeException extends RuntimeException {
 	
-	static final String UNDEFINEDTASKTYPE = "未定义的任务类型"; 
+	static final String UNDEFINEDTASKTYPE = "鏈畾涔夌殑浠诲姟绫诲瀷"; 
 
 	/**
 	 * serialVersionUID
