@@ -1,0 +1,22 @@
+<root>
+	<departmentName>Programming</departmentName>
+	<departmentNo>02</departmentNo>
+	<employees>
+		<employee>
+			<name>Tom</name>
+			<age>32</age>
+			<sex>Male</sex>
+			<position>manager</position>
+			<salary>4300</salary>
+			<hireDate>2011-02-03</hireDate>
+		</employee>
+		<employee>
+			<name>张三</name>
+			<age>22</age>
+			<sex>Male</sex>
+			<position>programmer</position>
+			<salary>2300</salary>
+			<hireDate>2011-02-03</hireDate>
+		</employee>
+	</employees>
+</root>
