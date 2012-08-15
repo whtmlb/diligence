@@ -12,6 +12,7 @@ public class NioFileAccessor {
 	}
 	
 	private static String readFile(String fileName) throws IOException {
+		@SuppressWarnings("resource")
 		FileInputStream fin = new FileInputStream(fileName);
 		FileChannel fc = fin.getChannel();
 		ByteBuffer buffer = ByteBuffer.allocate(256);

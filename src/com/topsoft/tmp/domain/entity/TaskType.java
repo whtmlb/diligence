@@ -3,11 +3,11 @@ package com.topsoft.tmp.domain.entity;
 import java.io.Serializable;
 
 /**
- * ÈÎÎñÀàÐÍ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * <p>
- * Ò»¸öTaskType¿ÉÒÔÀí½âÎªÒ»¸öÒµÎñÖÖÀà£¬¸ÃÒµÎñÖÖÀàµÄÒ»´ÎÒµÎñÊµÀý³ÆÎª¸ÃÖÖÀàµÄÒ»¸öÈÎÎñ£¬<br>
- * TaskType¶¨ÒåÁË¸ÃÀàÐÍµÄÈÎÎñÔÚ½øÐÐ¹ý³ÌÖÐËù°üº¬µÄ×´Ì¬¡¢¶Ô¸ÃÈÎÎñ¿ÉÄÜ½øÐÐµÄ²Ù×÷¡¢×´Ì¬Ç¨ÒÆ¹æÔò¡¢<br>
- * Óë¸ÃÈÎÎñÁ÷×ª°ó¶¨µÄÊý¾ÝÒÔ¼°²»Í¬×´Ì¬ÏÂÕâÐ©Êý¾ÝµÄÕ¹Ê¾ÐÐÎªºÍ²Ù×÷ÐÐÎª¡£
+ * Ò»ï¿½ï¿½TaskTypeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÒ»ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Òµï¿½ï¿½Êµï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br>
+ * TaskTypeï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü½ï¿½ï¿½ÐµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬Ç¨ï¿½Æ¹ï¿½ï¿½ï¿½<br>
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ó¶¨µï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Í¬×´Ì¬ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½Ýµï¿½Õ¹Ê¾ï¿½ï¿½Îªï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
  * 
  * @author weichao
  */
@@ -18,33 +18,35 @@ public class TaskType implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	public int age;
+	
 	/**
-	 * Î¨Ò»±êÊ¶
+	 * Î¨Ò»ï¿½ï¿½Ê¶
 	 */
 	private Long id;
 	
 	/**
-	 * ÈÎÎñÀàÐÍÃû³Æ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	private String name;
 	
 	/**
-	 * ÈÎÎñÀàÐÍÒµÎñ±àÂë£¬Î¨Ò»±êÊ¶ÁËÒ»¸öÒµÎñÀàÐÍ¡£±àÂë²»Í¬ÔòÈÎÎñÀàÐÍ²»Í¬£¬Í¬Ò»ÈÎÎñÀàÐÍµÄ²»Í¬°æ±¾£¬¹²ÏíÍ¬Ò»¸öÒµÎñ±àÂë¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ë£¬Î¨Ò»ï¿½ï¿½Ê¶ï¿½ï¿½Ò»ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½ï¿½ï¿½ï¿½ë²»Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½Í¬ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍµÄ²ï¿½Í¬ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ë¡£
 	 */
 	private String bizCode;
 	
 	/**
-	 * ÈÎÎñÀàÐÍ°æ±¾
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í°æ±¾
 	 */
 	private String version;
 	
 	/**
-	 * µ±Ç°°æ±¾±êÊ¶,ÎªtrueÊ±£¬ÒýÇæ²Å¿ÉÒÔÒÀ¾Ý¸Ã°æ±¾µÄ¶¨ÒåÀ´´´½¨ÈÎÎñÊµÀý
+	 * ï¿½ï¿½Ç°ï¿½æ±¾ï¿½ï¿½Ê¶,ÎªtrueÊ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸Ã°æ±¾ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
 	 */
 	private boolean current;
 	
 	/**
-	 * ÓÐÐ§±êÊ¶
+	 * ï¿½ï¿½Ð§ï¿½ï¿½Ê¶
 	 */
 	private boolean valid;
 	
