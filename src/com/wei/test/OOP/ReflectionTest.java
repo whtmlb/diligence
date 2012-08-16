@@ -6,13 +6,13 @@ import java.util.Date;
 
 import com.topsoft.tmp.domain.entity.TaskType;
 
-
-
 public class ReflectionTest {
+	
 	public static void main(String[]  e) {
 		Object ob = getObjectFromDomElement();
 	}
 	public static Object getObjectFromDomElement() {
+//		String test;
 		try {
 			TaskType ty = new TaskType();
 			Field[] fields = TaskType.class.getDeclaredFields();
@@ -23,6 +23,7 @@ public class ReflectionTest {
 				String nodeName;
 				String setMethodName = "set" + fieldName.substring(0, 1).toUpperCase()
                         + fieldName.substring(1, fieldName.length());
+				
 				Method setMethod = TaskType.class.getMethod(setMethodName, new Class[]{f.getType()});
 				Class o = f.getType();
 				if(o == String.class) {
@@ -41,4 +42,6 @@ public class ReflectionTest {
 		}
 		return null;
 	}
+	
+
 }
