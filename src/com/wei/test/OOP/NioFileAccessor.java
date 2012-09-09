@@ -12,16 +12,16 @@ public class NioFileAccessor {
 	}
 	
 	private static String readFile(String fileName) throws IOException {
-		@SuppressWarnings("resource")
-		FileInputStream fin = new FileInputStream(fileName);
-		FileChannel fc = fin.getChannel();
-		ByteBuffer buffer = ByteBuffer.allocate(256);
-		StringBuffer strBuffer = new StringBuffer();
-		while(fc.read(buffer) != -1) {
-			buffer.flip();
-			strBuffer.append(new String(buffer.array(),"utf-8"));
-			buffer.clear();
-		}
-		return strBuffer.toString();
+        @SuppressWarnings("resource")
+        FileInputStream fin = new FileInputStream(fileName);
+        FileChannel fc = fin.getChannel();
+        ByteBuffer buffer = ByteBuffer.allocate(256);
+        StringBuffer strBuffer = new StringBuffer();
+        while (fc.read(buffer) != -1) {
+            buffer.flip();
+            strBuffer.append(new String(buffer.array(), "utf-8"));
+            buffer.clear();
+        }
+        return strBuffer.toString();
 	}
 }
