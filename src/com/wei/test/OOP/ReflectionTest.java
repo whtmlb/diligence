@@ -2,6 +2,7 @@ package com.wei.test.OOP;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.topsoft.tmp.domain.entity.TaskType;
@@ -9,6 +10,7 @@ import com.topsoft.tmp.domain.entity.TaskType;
 public class ReflectionTest {
 	
 	public static void main(String[]  e) {
+	    System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS").format(new Date()));
 		Object ob = getObjectFromDomElement();
 	}
 	public static Object getObjectFromDomElement() {
