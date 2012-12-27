@@ -5,7 +5,13 @@ import java.util.Map.Entry;
 
 public class Mytest {
 	public static void main(String[] e) {
-		CircleGame newGame = new CircleGame(10, 4);
+		String ewej = "23|34|";
+		String[] ewe = ewej.split("\\|");
+		System.out.println(ewe[2]);
+		System.out.println("sun.boot.class.path >>>> "+System. getProperty("sun.boot.class.path"));
+		System.out.println("java.ext.dirs >>>> "+System. getProperty("java.ext.dirs"));
+		System.out.println("java.class.path >>>> "+System. getProperty("java.class.path"));
+        CircleGame newGame = new CircleGame(10, 4);
 		newGame.play();
 		newGame.showResult();
 	}
@@ -26,10 +32,10 @@ class Player {
 
 	public int talk(int num, int target) {
 		if (isInCircle) {
-			if(printOnConsole) System.out.print("Íæ¼Ò¡¾" + no + "¡¿£¬º° " + num);
+			if(printOnConsole) System.out.print("ï¿½ï¿½Ò¡ï¿½" + no + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + num);
 			if (num == target) {
 				goOut();
-				if(printOnConsole) System.out.print(" Àë¿ª");
+				if(printOnConsole) System.out.print(" ï¿½ë¿ª");
 				num = 1;
 			} else {
 				num++;
@@ -80,9 +86,9 @@ class Player {
 }
 
 class CircleGame {
-	int playerNum;// Íæ¼ÒÊýÄ¿
-	int targetNum;// º°µ½Õâ¸öÊýµÄÈËÀë¿ª
-	int lastPlayerNo;// ×îºóÁôÏÂµÄÈËµÄ±àºÅ
+	int playerNum;// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+	int targetNum;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¿ª
+	int lastPlayerNo;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ËµÄ±ï¿½ï¿½
 
 	public CircleGame(int playerNum, int targetNum) {
 		this.playerNum = playerNum;
@@ -95,7 +101,7 @@ class CircleGame {
 	}
 
 	public void showResult() {
-		System.out.println("ÓÎÏ·½áÊø£¬×îºóÊ£ÏÂµÄÍæ¼ÒÊÇ¡¾" + lastPlayerNo + "¡¿ºÅÍæ¼Ò");
+		System.out.println("ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½Ç¡ï¿½" + lastPlayerNo + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
 	}
 }
@@ -108,7 +114,7 @@ class Circle {
 	public Circle(int size) {
 		this.size = size;
 		players = new LinkedHashMap<Integer, Player>();
-		// ³õÊ¼»¯Íæ¼Ò
+		// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½
 		for (int i = 1; i <= size; i++) {
 			players.put(i, new Player(i,true));
 		}
