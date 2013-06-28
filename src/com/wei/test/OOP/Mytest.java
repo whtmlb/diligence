@@ -7,6 +7,14 @@ public class Mytest {
 	public static void main(String[] e) {
 		String ewej = "23|34|";
 		String[] ewe = ewej.split("\\|");
+		String ew = "#!wewee/wewe/w23/22323";
+		int st=ew.indexOf("/");
+		System.out.println("eeeeee "+ st);
+		String head = ew.substring(0,st);
+		System.out.println(head);
+		String tail = ew.substring(st);
+		System.out.println(tail);
+		System.out.println(head+"/44444444444444444"+tail);
 		System.out.println(ewe[2]);
 		System.out.println("sun.boot.class.path >>>> "+System. getProperty("sun.boot.class.path"));
 		System.out.println("java.ext.dirs >>>> "+System. getProperty("java.ext.dirs"));
